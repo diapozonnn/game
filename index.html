@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Тихонов</title>
+  <style>
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  /* Стиль заголовка */
+  .header {
+    background:url(./img/Frame_37-min_1.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: #ffffff;
+    height: 400px;
+  }
+
+  /* Создайте три одинаковых столбца, которые плавают рядом друг с другом */
+  .column {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    height: 300px; /* Должен быть удален. Только для демонстрации */
+  }
+
+  /* Очистить поплавки после колонн */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /* Стиль нижнего колонтитула */
+  .footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+  }
+
+  /* Отзывчивый макет - делает три колонки стек поверх друг друга, а не рядом друг с другом */
+  @media (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+  }
+  </style>
+ </head>
+ <body>
+
+  <h1></h1>
+
+  <div class="header">
+    <h2>Как разработать игру?</h2>
+  </div>
+
+  <div class="row">
+    <div class="column" style="background-color:#aaa;">Столбец</div>
+    <div class="column" style="background-color:#bbb;">Столбец</div>
+    <div class="column" style="background-color:#ccc;">Столбец</div>
+  </div>
+
+  <div class="footer">
+    <p>Подвал</p>
+  </div>
+
+ </body>
+</html>
